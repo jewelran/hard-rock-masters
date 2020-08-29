@@ -20,7 +20,7 @@ body{
 }
 .btn1{
     float: left;
-    align-items: center center;
+    margin-top: 24%;
 }
 .btn-privious,.btn1-previous{
     background: rgba(255, 255, 255, 0.2);
