@@ -43,7 +43,7 @@
             })
         }
 
-// -----------------------------------------------------------------
+// ------------------------under lyrics-----------------------------------------
 document.getElementById('seachBtn').addEventListener('click', function(){
     const searchInput = document.getElementById("search").value;
     fetch(`${apiURL}/suggest/${searchInput}`)
