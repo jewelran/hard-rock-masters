@@ -19,8 +19,8 @@
                     const userData = data.data[i];
                    const songTitle = userData.title;
                    const songArtist = userData.artist.name;
-                    //console.log(songArtist)
-                    // console.log(element)
+                    // console.log(songArtist)
+                    console.log(userData)
                    lyricsList.innerHTML += ` <p class="author lead"><strong>${userData.title}</strong> ${userData.type} <span>Washed Out</span> <button onclick="getLyrics('${songTitle}', '${songArtist}')" id="click_lyrics" class="btn btn-success">Get Lyrics</button></p>`
                 }
             })
@@ -53,16 +53,20 @@ document.getElementById('seachBtn').addEventListener('click', function(){
         for (let i = 0; i < data.data.length; i++) {
             const element = data.data[i];
             const songTitle1 = element.title
+            const songId = element.artist.id
             const songArtist1 = element.artist.name
+            const songType = element.artist.type
             // console.log(songTitle1, songArtist1)
             const p = document.createElement('p');
             p.innerHTML = `<div class = "containerLyrics" class="single-result  align-items-center my-3 p-3">
                 <div class = "title">
                 <h2>${songTitle1}</h2><br>              
+                <p>${songId}</p> 
                 <p>${songArtist1}</p> 
+                <p>${songType}</p> 
                 </div>
                 <div class="titleBtn">
-                <button onclick="getLyrics('${songTitle1}', '${songArtist1}')" class="btn1 btn">get ditails</button>
+                <button onclick="getLyrics('${songTitle1}', '${songArtist1}')" class="btn1 btn">Get lyrics</button>
                 </div>
              
                 </div>

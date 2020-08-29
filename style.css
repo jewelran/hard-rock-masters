@@ -20,7 +20,8 @@ body{
 }
 .btn1{
     float: left;
-    margin-top: 24%;
+    margin-top: 45%;
+    color: white;
 }
 .btn-privious,.btn1-previous{
     background: rgba(255, 255, 255, 0.2);
@@ -39,6 +40,9 @@ body{
 }
 .title{
     width: 75%;
+    line-height: 10px;
+    text-align:center right;
+    margin-left: 5%;
 }
 .navbar-toggler {
     border: none;
