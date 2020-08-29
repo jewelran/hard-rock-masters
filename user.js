@@ -81,14 +81,16 @@ document.getElementById('seachBtn').addEventListener('click', function(){
                 // console.log(data)
                 const dataView1 = data.lyrics;
                 // console.log(dataView)
-                const detail = document.getElementById("display");
+                const detail = document.getElementById("displayShow");
                 detail.innerHTML =`
-                                    <p class = "lyrics">${dataView1}</p>
+                                    <p class ="lyrics">${dataView1}</p>
                 `
             })
         }
 
-
+// ami slice korar jonno onek chesta korchi... kintu slice hocche na keno?
+//  jodi solve kore diten valo hoto.
+// lyrics display korar jonno , 2ta div niyechi, 1ta holo -- display, 2nd ta holo-- displayShow, kintu 2tar result ekoi div er modde dekhacche. ata keno holo? plz jodi bolten.
 
 
 
